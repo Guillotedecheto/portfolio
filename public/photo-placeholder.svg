@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 533" fill="none">
+  <rect width="400" height="533" fill="#141414"/>
+  <circle cx="200" cy="180" r="80" fill="#1f1f1f" stroke="#c9a96e" stroke-width="1" stroke-opacity="0.3"/>
+  <path d="M80 480 C80 380 320 380 320 480" fill="#1f1f1f" stroke="#c9a96e" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="200" y="520" text-anchor="middle" fill="#6b6b6b" font-size="12" font-family="sans-serif" letter-spacing="3">G B C</text>
+</svg>
