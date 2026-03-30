@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { hero } from "@/lib/content";
 
 const fadeUp = {
@@ -15,13 +16,26 @@ const fadeUp = {
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-end pb-20 md:pb-28 section-padding overflow-hidden">
-      {/* Background grain */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" />
-
       {/* Large background number */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 font-display font-black text-[20vw] text-white/[0.02] select-none pointer-events-none leading-none pr-4 md:pr-12">
         01
       </div>
+
+      {/* Petravio logo — top right, between name and "01" */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.8, duration: 1 }}
+        className="absolute top-1/2 -translate-y-1/2 right-[18vw] hidden lg:block"
+      >
+        <Image
+          src="/petravio-logo.svg"
+          alt="Petravio"
+          width={260}
+          height={62}
+          className="opacity-70 hover:opacity-100 transition-opacity duration-300"
+        />
+      </motion.div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl">
